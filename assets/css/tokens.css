@@ -1,0 +1,71 @@
+/* =====================================================================
+   UWA India — Design tokens
+   ---------------------------------------------------------------------
+   PROVISIONAL: these values were sampled from the approved homepage
+   screenshot because the official brand guidelines have not been
+   supplied yet. When the guidelines arrive, update ONLY this file —
+   every component reads from these variables.
+   ===================================================================== */
+
+:root {
+  /* ---- Colour ---- */
+  --c-blue: #0032ff;          /* primary: headings, buttons, panels   */
+  --c-blue-hover: #0028cc;
+  --c-navy: #003087;          /* header + footer background          */
+  --c-navy-dark: #002855;     /* header menu button, search icon     */
+  --c-cyan: #9adbe8;          /* search buttons                      */
+  --c-blue-tint: #f0f3ff;     /* pills, icon chips                   */
+  --c-blue-tint-2: #ebefff;
+  --c-surface-soft: #f9faff;  /* consent box                         */
+  --c-surface-muted: #f5f6fa; /* option group background             */
+  --c-surface-disabled: #f8f9fb;
+  --c-white: #ffffff;
+  --c-black: #000000;
+  --c-text: #111111;
+  --c-text-muted: #444444;
+  --c-text-subtle: #8a8a8a;
+  --c-border: #e2e2e2;
+  --c-border-strong: #c2c2c2;
+  --c-error: #c8102e;
+
+  /* ---- Typography ----
+     Brand fonts not yet supplied. Stand-ins (Google Fonts):
+       body/headings → Outfit   (rounded geometric sans)
+       display       → Archivo  (heavy, condensed, uppercase)       */
+  --font-body: "Outfit", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Archivo", "Arial Black", Impact, sans-serif;
+  --font-list: Arial, Helvetica, sans-serif; /* "Build a career" bullets use a system face in the design */
+
+  --fs-xs: 0.8125rem;   /* 13px */
+  --fs-sm: 0.875rem;    /* 14px */
+  --fs-base: 0.875rem;  /* 14px */
+  --fs-md: 0.9375rem;   /* 15px */
+  --fs-lg: 1.1875rem;   /* 19px */
+  --fs-xl: 1.375rem;    /* 22px */
+  --fs-2xl: 1.625rem;   /* 26px */
+  --fs-hero: 1.9rem;    /* mobile hero headline */
+
+  /* ---- Spacing / layout ---- */
+  --gutter: 12px;
+  --container: 1200px;
+  --section-gap: 64px;
+  --radius-card: 6px;
+  --radius-btn: 2px;
+  --chevron-depth: 32px;  /* depth of the signature pointed edges */
+
+  --shadow-card: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --gutter: 32px;
+    --fs-hero: 3rem;
+    --fs-base: 1rem;
+    --fs-md: 1.0625rem;
+    --fs-lg: 1.375rem;
+    --fs-xl: 2rem;
+    --fs-2xl: 2.75rem;
+    --section-gap: 96px;
+    --chevron-depth: 48px;
+  }
+}
