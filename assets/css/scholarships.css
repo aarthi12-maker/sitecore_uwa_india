@@ -1,0 +1,48 @@
+/* Scholarships screen: UWA Brand Guidelines v1.1, pp. 53–54 and 60–68.
+   Uses the shared Melun Display / TT Norms Pro fonts and original logo. */
+.scholarships-page { --scholarship-surface: #f2efec; }
+.scholarships-main { max-width: 1264px; margin-inline: auto; }
+.scholarships-intro { padding-top: 48px; }
+.scholarships-intro h1 { font-family: var(--font-display); font-size: 44px; font-weight: 700; line-height: 1; letter-spacing: normal; text-transform: uppercase; color: var(--c-blue); }
+.scholarships-intro > p { margin-top: 20px; font-size: 18px; line-height: 1.5; color: #333; }
+.scholarships-intro__image { margin-top: 40px; height: 310px; overflow: hidden; clip-path: polygon(0 48px, 65% 0, 100% 48px, 100% 100%, 0 100%); }
+.scholarships-intro__image img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.scholarships-page-nav { margin-top: 112px; }
+.scholarships-page-nav h2 { font-size: 18px; line-height: 1.4; font-weight: 600; }
+.scholarships-page-nav p { margin-top: 8px; font-size: 16px; line-height: 1.5; color: #333; }
+.scholarship-benefits { width: calc(100% - 128px); max-width: 452px; margin: 112px auto 0; background: var(--scholarship-surface); border-radius: 8px; overflow: hidden; }
+.scholarship-benefits__image { width: 100%; height: 340px; object-fit: cover; object-position: center; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 48px), 50% 100%, 0 calc(100% - 48px)); }
+.scholarship-benefits__body { padding: 48px 24px 64px; }
+.scholarship-benefits h2 { font-size: 28px; line-height: 1.25; font-weight: 500; }
+.scholarship-benefits ul { margin-top: 20px; padding-left: 24px; font-size: 16px; line-height: 1.5; }
+.scholarship-benefits li + li { margin-top: 6px; }
+.scholarship-application { margin-top: 80px; }
+.scholarship-application h2 { font-size: 24px; line-height: 1.3; font-weight: 500; }
+.scholarship-application p { margin-top: 20px; font-size: 16px; line-height: 1.3; color: #333; }
+.scholarships-page .back-to-top-wrap { margin-top: 176px; }
+@media (max-width: 479px) {
+  .scholarships-intro { padding-top: 32px; }
+  .scholarships-intro h1 { font-size: 36px; }
+  .scholarships-intro > p { font-size: 17px; margin-top: 18px; }
+  .scholarships-intro__image { height: auto; aspect-ratio: 1.78; margin-top: 40px; clip-path: polygon(0 32px, 65% 0, 100% 32px, 100% 100%, 0 100%); }
+  .scholarships-page-nav { margin-top: 100px; }
+  .scholarship-benefits { width: calc(100% - 96px); margin-top: 100px; }
+  .scholarship-benefits__image { height: auto; aspect-ratio: 1.33; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 32px), 50% 100%, 0 calc(100% - 32px)); }
+  .scholarship-benefits__body { padding: 36px 20px 48px; }
+  .scholarship-benefits h2 { font-size: 25px; }
+  .scholarship-benefits ul { font-size: 15px; padding-left: 20px; }
+  .scholarship-application { margin-top: 72px; }
+  .scholarships-page .back-to-top-wrap { margin-top: 160px; }
+}
+@media (min-width: 768px) {
+  .scholarships-intro { padding-top: 64px; }
+  .scholarships-intro h1 { font-size: 56px; }
+  .scholarships-intro > p { max-width: 860px; font-size: 20px; }
+  .scholarships-intro__image { height: clamp(360px, 38vw, 500px); }
+  .scholarships-page-nav { margin-top: 80px; }
+  .scholarship-benefits { max-width: 600px; margin-top: 80px; }
+  .scholarship-benefits__image { height: 400px; }
+  .scholarship-benefits__body { padding-inline: 40px; }
+  .scholarship-benefits h2 { font-size: 32px; }
+  .scholarship-application p { max-width: 860px; font-size: 18px; line-height: 1.5; }
+}

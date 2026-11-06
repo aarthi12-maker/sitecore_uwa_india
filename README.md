@@ -1,16 +1,12 @@
-# UWA India — Homepage (front-end build)
+# UWA India — Scholarships screen
 
-Static HTML/CSS/JS build of the UWA India homepage, matched to the approved
-mobile design. Open `index.html` in a browser — no build step needed.
+Run `npm start` and open http://127.0.0.1:3000. The Scholarships screen is available at `index.html` and `scholarships.html`. The previous screens remain at `how-to-apply.html` and `home.html`.
 
-```
-index.html               homepage markup
-assets/css/tokens.css    ALL colours, fonts, sizes  ← update from brand guidelines
-assets/css/main.css      component styles (mobile-first, desktop ≥768px)
-assets/js/main.js        menu, search, carousel, country switcher, form logic
-assets/js/form-data.js   form dropdown data (states, campuses, courses, intakes)
-assets/images/           images (currently cropped from the design screenshot)
-```
+The scholarship layout and copy follow the supplied screenshot. Pages 7–8 of the supplied content PDF request that existing scholarship content be carried over. Shared branding follows UWA Brand Guidelines v1.1 (pp. 53–54, 60–68): Vivid Blue, UWA Blue, Melun Display and TT Norms Pro, with the logo proportions preserved. The card uses the approved neutral `#F2EFEC`.
+
+The exact two reference photos have not yet been located; current photos are official UWA assets and can be replaced without changing the layout.
+
+Page-specific styles are in `assets/css/scholarships.css`; shared header and footer styles are in `assets/css/how-to-apply.css`. Fonts and images are served locally. The previous application screen retains its FAQ dialog and application links.
 
 ## Sitecore rendering map
 
@@ -36,7 +32,7 @@ should become when converted to XM Cloud / JSS components:
 ## Still to replace before go-live
 
 - **Brand tokens** — colours/fonts in `tokens.css` were sampled from the
-  screenshot. Fonts are Google stand-ins (Outfit, Archivo).
+  screenshot. Fonts are Google stand-ins (Kumbh Sans, Kanit).
 - **Images & logo** — low-res crops from the screenshot; swap for originals
   (same filenames).
 - **Why Choose cards 3 & 4** — copy was cut off in the design; placeholder text.

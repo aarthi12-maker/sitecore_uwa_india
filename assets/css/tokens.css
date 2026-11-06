@@ -1,11 +1,40 @@
 /* =====================================================================
    UWA India — Design tokens
    ---------------------------------------------------------------------
-   PROVISIONAL: these values were sampled from the approved homepage
-   screenshot because the official brand guidelines have not been
-   supplied yet. When the guidelines arrive, update ONLY this file —
-   every component reads from these variables.
+   PROVISIONAL: values measured from the approved homepage design
+   (581px-wide mobile frame) because the official brand guidelines have
+   not been supplied yet. When the guidelines arrive, update ONLY this
+   file — every component reads from these variables.
    ===================================================================== */
+
+@font-face {
+  font-family: "Melun Display";
+  src: url("../fonts/melun-display-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Norms Pro";
+  src: url("../fonts/tt-norms-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Norms Pro";
+  src: url("../fonts/tt-norms-medium.woff2") format("woff2");
+  font-weight: 500 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Norms Pro";
+  src: url("../fonts/tt-norms-bold.woff2") format("woff2");
+  font-weight: 700 900;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   /* ---- Colour ---- */
@@ -14,58 +43,49 @@
   --c-navy: #003087;          /* header + footer background          */
   --c-navy-dark: #002855;     /* header menu button, search icon     */
   --c-cyan: #9adbe8;          /* search buttons                      */
-  --c-blue-tint: #f0f3ff;     /* pills, icon chips                   */
-  --c-blue-tint-2: #ebefff;
+  --c-link-muted: #2d5bb9;    /* "Back to top"                       */
+  --c-blue-tint: #f0f3ff;     /* pills                               */
+  --c-blue-tint-2: #ebefff;   /* icon chips                          */
   --c-surface-soft: #f9faff;  /* consent box                         */
   --c-surface-muted: #f5f6fa; /* option group background             */
-  --c-surface-disabled: #f8f9fb;
+  --c-surface-disabled: #f6f7f9;
   --c-white: #ffffff;
-  --c-black: #000000;
   --c-text: #111111;
-  --c-text-muted: #444444;
+  --c-text-muted: #555555;
   --c-text-subtle: #8a8a8a;
   --c-border: #e2e2e2;
   --c-border-strong: #c2c2c2;
   --c-error: #c8102e;
 
-  /* ---- Typography ----
-     Brand fonts not yet supplied. Stand-ins (Google Fonts):
-       body/headings → Outfit   (rounded geometric sans)
-       display       → Archivo  (heavy, condensed, uppercase)       */
-  --font-body: "Outfit", "Helvetica Neue", Arial, sans-serif;
-  --font-display: "Archivo", "Arial Black", Impact, sans-serif;
+  /* Brand guidelines pp. 60–68. Fonts sourced from UWA's official website. */
+  --font-body: "TT Norms Pro", "Plus Jakarta Sans", "Century Gothic", sans-serif;
+  --font-display: "Melun Display", "Fira Sans Condensed", "Arial Black", sans-serif;
   --font-list: Arial, Helvetica, sans-serif; /* "Build a career" bullets use a system face in the design */
 
-  --fs-xs: 0.8125rem;   /* 13px */
-  --fs-sm: 0.875rem;    /* 14px */
-  --fs-base: 0.875rem;  /* 14px */
-  --fs-md: 0.9375rem;   /* 15px */
-  --fs-lg: 1.1875rem;   /* 19px */
-  --fs-xl: 1.375rem;    /* 22px */
-  --fs-2xl: 1.625rem;   /* 26px */
-  --fs-hero: 1.9rem;    /* mobile hero headline */
+  --fw-body: 350;           /* design body copy is a light regular */
+  --fs-xs: 13px;
+  --fs-sm: 15px;
+  --fs-base: 16px;
+  --fs-md: 17px;
+  --fs-lg: 23px;
+  --fs-xl: 29px;
+  --fs-2xl: 37px;
+  --fs-hero: 44px;
 
   /* ---- Spacing / layout ---- */
-  --gutter: 12px;
+  --gutter: 16px;
   --container: 1200px;
-  --section-gap: 64px;
   --radius-card: 6px;
   --radius-btn: 2px;
-  --chevron-depth: 32px;  /* depth of the signature pointed edges */
+  --chevron-depth: 48px;  /* depth of the signature pointed edges */
 
-  --shadow-card: 0 1px 6px rgba(0, 0, 0, 0.1);
+  --shadow-card: 0 1px 8px rgba(0, 0, 0, 0.12);
 }
 
 @media (min-width: 768px) {
   :root {
     --gutter: 32px;
-    --fs-hero: 3rem;
-    --fs-base: 1rem;
-    --fs-md: 1.0625rem;
-    --fs-lg: 1.375rem;
-    --fs-xl: 2rem;
-    --fs-2xl: 2.75rem;
-    --section-gap: 96px;
-    --chevron-depth: 48px;
+    --fs-hero: 48px;
+    --fs-2xl: 44px;
   }
 }

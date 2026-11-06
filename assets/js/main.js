@@ -22,14 +22,14 @@
   var track = document.querySelector(".why__track");
   var bar = document.querySelector(".why__progress-bar");
   if (track && bar) {
+    var cards = track.children.length;
     var updateBar = function () {
+      /* one segment per card, like the design (1 of 4 = 25%) */
       var max = track.scrollWidth - track.clientWidth;
-      var visible = track.clientWidth / track.scrollWidth;
-      bar.style.width = Math.max(visible, 0.15) * 100 + "%";
       var ratio = max > 0 ? track.scrollLeft / max : 0;
-      var free = 1 / Math.max(visible, 0.15) - 1;
-      bar.style.transform = "translateX(" + ratio * free * 100 + "%)";
-      bar.parentElement.style.visibility = max > 0 ? "visible" : "hidden";
+      bar.style.width = 100 / cards + "%";
+      bar.style.transform = "translateX(" + ratio * (cards - 1) * 100 + "%)";
+      bar.parentElement.style.visibility = max > 1 ? "visible" : "hidden";
     };
     track.addEventListener("scroll", updateBar, { passive: true });
     window.addEventListener("resize", updateBar);
@@ -123,7 +123,7 @@
     captchaText = "";
     for (var i = 0; i < 6; i++) captchaText += chars[Math.floor(Math.random() * chars.length)];
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.font = "italic 700 30px Outfit, Arial, sans-serif";
+    ctx.font = "italic 700 30px 'Kumbh Sans', Arial, sans-serif";
     ctx.fillStyle = "#0032ff";
     ctx.textBaseline = "middle";
     var x = 4;
