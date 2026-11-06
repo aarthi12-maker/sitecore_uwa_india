@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Scholarships | UWA India</title>
-  <meta name="description" content="Explore scholarships and bursaries at UWA India, designed to recognise academic achievement and support your education.">
+  <title>Postgraduate courses | UWA India</title>
+  <meta name="description" content="Advance your expertise with a postgraduate degree from a globally ranked institution, designed to fast-track your career in technology or business.">
   <link rel="stylesheet" href="assets/css/tokens.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/how-to-apply.css">
-  <link rel="stylesheet" href="assets/css/scholarships.css">
+  <link rel="stylesheet" href="assets/css/course-listings.css">
 </head>
-<body id="top" class="apply-page scholarships-page">
+<body id="top" class="apply-page courses-page courses-page--postgraduate">
   <a class="skip-link" href="#main-content">Skip to content</a>
 
   <!-- SVG sprite -->
@@ -43,10 +43,11 @@
     </div>
     <nav class="site-nav" id="site-nav" aria-label="Main">
       <ul class="container">
-        <li><a href="https://www.uwa.edu.au/about/locations/uwa-india---coming-soon">Why UWA India</a></li>
-        <li><a href="https://www.uwa.edu.au/about/locations/uwa-india---coming-soon#courses">Courses</a></li>
+        <li><a href="why-uwa-india.html">Why UWA India</a></li>
+        <li><a href="undergraduate-courses.html">Undergraduate courses</a></li>
+        <li><a href="postgraduate-courses.html" aria-current="page">Postgraduate courses</a></li>
         <li><a href="how-to-apply.html">How to apply</a></li>
-        <li><a href="scholarships.html" aria-current="page">Scholarships</a></li>
+        <li><a href="scholarships.html">Scholarships</a></li>
         <li><a href="home.html">Student life</a></li>
         <li><a href="home.html#campuses">Campuses</a></li>
         <li><a href="mailto:info.uwaindia@uwa.edu.au">Contact us</a></li>
@@ -59,42 +60,34 @@
         <button type="submit" aria-label="Search"><svg width="20" height="20" aria-hidden="true"><use href="#i-search"/></svg></button>
       </form>
     </div>
-    <div class="container"><p class="site-header__title">How to apply</p></div>
+    <div class="container"><p class="site-header__title">Study</p></div>
   </header>
   <nav class="breadcrumb" aria-label="Breadcrumb">
-    <ol class="container"><li><a href="home.html">UWA</a></li><li aria-hidden="true">›</li><li><a href="how-to-apply.html">How to apply</a></li><li aria-hidden="true">›</li><li aria-current="page">Scholarships</li></ol>
+    <ol class="container"><li><a href="home.html">UWA</a></li><li aria-hidden="true">›</li><li><a href="home.html">Study</a></li><li aria-hidden="true">›</li><li aria-current="page">Postgraduate courses</li></ol>
   </nav>
 
-  <main id="main-content" class="scholarships-main">
-    <section class="scholarships-intro container" aria-labelledby="scholarships-title" data-rendering="ScholarshipsIntro">
-      <h1 id="scholarships-title">Scholarships</h1>
-      <p>At UWA India, we are committed to making a world-class education more accessible. We offer a range of scholarships and bursaries designed to recognise academic achievement, support talented students, and provide financial assistance across our programs. Whether you are a high-performing student, applying early, or seeking support to begin your global education journey, our scholarships are designed to help you succeed.</p>
-      <div class="scholarships-intro__image"><img src="assets/images/scholarships-trading-room.jpg" alt="Students analysing financial market data in the UWA trading room" width="1200" height="626" fetchpriority="high"></div>
-    </section>
-
-    <aside class="scholarships-page-nav container" aria-labelledby="page-nav-title" data-rendering="OnThisPage">
-      <h2 id="page-nav-title">On this page</h2>
-      <p>No page sections found for navigation.</p>
-    </aside>
-
-    <section class="scholarship-benefits" aria-labelledby="benefits-title" data-rendering="ScholarshipBenefits">
-      <img class="scholarship-benefits__image" src="assets/images/scholarships-studio.jpg" alt="A student recording vocals in a UWA music studio" width="800" height="600" loading="lazy">
-      <div class="scholarship-benefits__body">
-        <h2 id="benefits-title">Why apply for a scholarship?</h2>
-        <ul>
-          <li>Reduce the cost of your tuition fees</li>
-          <li>Be recognised for your academic achievements</li>
-          <li>Access a globally recognised UWA qualification</li>
-          <li>Start your studies with added financial confidence</li>
-        </ul>
+  <main id="main-content">
+    <section class="hero course-hero" aria-labelledby="course-page-title" data-rendering="CourseListingHero">
+      <div class="hero__media"><img src="assets/images/postgraduate-lab.jpg" alt="Two UWA researchers reviewing data on laboratory monitors" width="1600" height="1050" fetchpriority="high"></div>
+      <div class="hero__panel">
+        <h1 class="hero__title" id="course-page-title">Postgraduate courses</h1>
+        <p class="hero__text">Advance your expertise with a postgraduate degree from a globally ranked institution, designed to fast-track your career in technology or business.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--white" href="https://applyindia.uwa.edu.au/uwa-india-application-form">Apply now</a>
+          <a class="btn btn--ghost-white" href="why-uwa-india.html">Why UWA India</a>
+        </div>
       </div>
     </section>
-
-    <section class="scholarship-application container" aria-labelledby="scholarship-apply-title" data-rendering="ScholarshipApplication">
-      <h2 id="scholarship-apply-title">How to apply</h2>
-      <p>Most scholarships are assessed automatically as part of your application to study at UWA India and do not require a separate application. For select scholarships, additional documentation or criteria may apply. Full details are available on individual scholarship pages.</p>
+    <section class="course-list" aria-label="Postgraduate courses" data-rendering="CourseListingCards">
+      <a class="course-card course-card--text" href="how-to-apply.html" data-course="Master of Data Science"><span>Master of Data Science</span><svg class="course-card__arrow" viewBox="0 0 24 20" aria-hidden="true"><path d="M2 10h19M14 3l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
     </section>
   </main>
+
+  <dialog class="course-dialog" aria-labelledby="course-dialog-title">
+    <div class="course-dialog__header"><h2 id="course-dialog-title">Course information</h2><button type="button" class="course-dialog__close" aria-label="Close course information">×</button></div>
+    <p>Read our application guide or contact the UWA India team for course information and entry requirements.</p>
+    <div class="course-dialog__actions"><a class="btn btn--primary" href="how-to-apply.html">How to apply</a><a class="btn btn--outline" id="course-enquiry-link" href="mailto:info.uwaindia@uwa.edu.au">Enquire about this course</a></div>
+  </dialog>
 
   <!-- ============ 13. Footer ============ -->
   <div class="container back-to-top-wrap">
@@ -148,11 +141,11 @@
         <a href="https://www.linkedin.com/school/university-of-western-australia/" aria-label="UWA on LinkedIn"><img src="assets/images/social-linkedin.svg" alt="" width="25" height="25" loading="lazy"></a>
       </nav>
       <a class="footer-go8" href="https://go8.edu.au/"><img src="assets/images/group-of-eight.svg" alt="Group of Eight Australia member" width="108" height="58" loading="lazy"></a>
-      <details class="footer-this-page"><summary>This page</summary><a href="#main-content">Scholarships</a></details>
+      <details class="footer-this-page"><summary>This page</summary><a href="#main-content">Postgraduate courses</a></details>
     </div>
   </footer>
 
-
+  <script src="assets/js/course-listings.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -1,10 +1,8 @@
 /* =====================================================================
    UWA India — Design tokens
    ---------------------------------------------------------------------
-   PROVISIONAL: values measured from the approved homepage design
-   (581px-wide mobile frame) because the official brand guidelines have
-   not been supplied yet. When the guidelines arrive, update ONLY this
-   file — every component reads from these variables.
+   Core palette and typography follow UWA Brand Guidelines v1.1.
+   Shared component sizing retains the supplied 581px mobile frame.
    ===================================================================== */
 
 @font-face {

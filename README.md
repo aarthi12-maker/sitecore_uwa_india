@@ -1,12 +1,16 @@
-# UWA India — Scholarships screen
+# UWA India — Course listing screens
 
-Run `npm start` and open http://127.0.0.1:3000. The Scholarships screen is available at `index.html` and `scholarships.html`. The previous screens remain at `how-to-apply.html` and `home.html`.
+Run `npm start` and open http://127.0.0.1:3000. The latest default screen is Postgraduate courses (`index.html`, also `postgraduate-courses.html`). Undergraduate courses is at `undergraduate-courses.html`. Both are linked in every page’s menu. The prior screens remain at `why-uwa-india.html`, `scholarships.html`, `how-to-apply.html`, and `home.html`.
 
-The scholarship layout and copy follow the supplied screenshot. Pages 7–8 of the supplied content PDF request that existing scholarship content be carried over. Shared branding follows UWA Brand Guidelines v1.1 (pp. 53–54, 60–68): Vivid Blue, UWA Blue, Melun Display and TT Norms Pro, with the logo proportions preserved. The card uses the approved neutral `#F2EFEC`.
+The two layouts follow the supplied course-listing screenshots: full-width laboratory images, overlapping Vivid Blue chevron panels, two hero actions, centred course cards and the complete shared footer. Introductory copy is from the supplied content PDF, pages 6–7. Card titles follow the screenshots. The first two undergraduate image cards have no visible titles in the reference; their accessible names describe course exploration without inventing program names.
 
-The exact two reference photos have not yet been located; current photos are official UWA assets and can be replaced without changing the layout.
+Brand reference: UWA Brand Guidelines v1.1, pages 53–54 and 60–68. Uses local Melun Display and TT Norms Pro, Vivid Blue `#0032FF`, UWA Blue `#003087`, white and black, with logo proportions preserved and no display tracking adjustments.
 
-Page-specific styles are in `assets/css/scholarships.css`; shared header and footer styles are in `assets/css/how-to-apply.css`. Fonts and images are served locally. The previous application screen retains its FAQ dialog and application links.
+The undergraduate banner is cropped from the supplied local course-page design. Campus card images reuse `join-uwa.jpg`. The postgraduate banner uses the same lab photograph from the official UWA High Performance Computing page, but its public rendition is cropped more tightly than the supplied screenshot; the full-frame original is needed for an exact photo match.
+
+Page styles: `assets/css/course-listings.css`. Course cards open a native dialog with the application guide and a prefilled course enquiry email; no unsupported fees, intakes or eligibility criteria are invented. Behaviour: `assets/js/course-listings.js`. Header/footer behaviour remains shared.
+
+Validation: Chrome at 390px, 581px and 1440px for both screens; image/font loading, horizontal overflow, course dialog and Escape, menu, search, country selector and Why UWA navigation. No browser errors observed.
 
 ## Sitecore rendering map
 
