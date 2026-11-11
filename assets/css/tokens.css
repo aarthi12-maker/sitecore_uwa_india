@@ -39,28 +39,28 @@
   --c-blue: #0032ff;          /* primary: headings, buttons, panels   */
   --c-blue-hover: #0028cc;
   --c-navy: #003087;          /* header + footer background          */
-  --c-navy-dark: #002855;     /* header menu button, search icon     */
-  --c-cyan: #9adbe8;          /* search buttons                      */
-  --c-link-muted: #2d5bb9;    /* "Back to top"                       */
+  --c-navy-dark: #002b5f;     /* header menu button, search icon     */
+  --c-cyan: #7eb0de;          /* search buttons                      */
+  --c-link-muted: #003087;    /* "Back to top"                       */
   --c-blue-tint: #f0f3ff;     /* pills                               */
   --c-blue-tint-2: #ebefff;   /* icon chips                          */
   --c-surface-soft: #f9faff;  /* consent box                         */
   --c-surface-muted: #f5f6fa; /* option group background             */
   --c-surface-disabled: #f6f7f9;
   --c-white: #ffffff;
-  --c-text: #111111;
-  --c-text-muted: #555555;
-  --c-text-subtle: #8a8a8a;
-  --c-border: #e2e2e2;
+  --c-text: #000000;
+  --c-text-muted: #666766;
+  --c-text-subtle: #666766;
+  --c-border: #dbdbdb;
   --c-border-strong: #c2c2c2;
   --c-error: #c8102e;
 
   /* Brand guidelines pp. 60–68. Fonts sourced from UWA's official website. */
   --font-body: "TT Norms Pro", "Plus Jakarta Sans", "Century Gothic", sans-serif;
   --font-display: "Melun Display", "Fira Sans Condensed", "Arial Black", sans-serif;
-  --font-list: Arial, Helvetica, sans-serif; /* "Build a career" bullets use a system face in the design */
+  --font-list: "TT Norms Pro", "Century Gothic", sans-serif; /* "Build a career" bullets use a system face in the design */
 
-  --fw-body: 350;           /* design body copy is a light regular */
+  --fw-body: 400;           /* design body copy is a light regular */
   --fs-xs: 13px;
   --fs-sm: 15px;
   --fs-base: 16px;

@@ -13,7 +13,7 @@
 .reasons-ranking { flex: 0 0 280px; text-align: center; scroll-snap-align: center; padding: 0 16px; }
 .reasons-ranking + .reasons-ranking { border-left: 1px solid #dbdbdb; }
 .reasons-ranking strong { display: block; font-family: var(--font-body); font-size: 48px; font-weight: 700; line-height: 1; color: var(--c-blue); }
-.reasons-ranking:first-child strong { color: #7eb0de; }
+.reasons-ranking:first-child strong { color: var(--c-blue); }
 .reasons-ranking p { font-size: 16px; line-height: 1.25; margin-top: 8px; }
 .reasons-ranking small { display: block; font-size: 12px; line-height: 1.3; margin-top: 10px; color: #666766; }
 .reasons-rankings__progress { height: 4px; background: #dbdbdb; margin: 36px var(--gutter) 0; overflow: hidden; }

@@ -1,0 +1,14 @@
+[
+  {
+    "campus": "Mumbai",
+    "source": "https://india.uwa.edu.au/upcoming-events",
+    "type": "directory",
+    "confirmed_dates": null
+  },
+  {
+    "campus": "Chennai",
+    "source": "https://india.uwa.edu.au/whats-new",
+    "type": "directory",
+    "confirmed_dates": null
+  }
+]

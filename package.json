@@ -5,7 +5,9 @@
   "description": "UWA India website front-end (homepage)",
   "scripts": {
     "dev": "live-server --port=3000 --wait=100",
-    "start": "live-server --port=3000"
+    "start": "live-server --port=3000",
+    "check": "python3 scripts/check_site.py",
+    "generate": "python3 scripts/complete_site.py"
   },
   "devDependencies": {
     "live-server": "1.2.2"

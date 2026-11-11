@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>UWA India | A world-class UWA degree, now in India</title>
   <meta name="description" content="Gain the skills, industry experience and global perspective needed to succeed in tomorrow's workforce through UWA India. Campuses in Mumbai and Chennai.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@800&family=Kumbh+Sans:wght@300..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/tokens.css">
   <link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/how-to-apply.css">
+<link rel="stylesheet" href="assets/css/site.css">
 </head>
-<body id="top">
+<body id="top" class="apply-page home-page">
 
-  <!-- SVG sprite -->
+  <a class="skip-link" href="#main-content">Skip to content</a>
+<!-- SVG sprite -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <symbol id="i-arrow" viewBox="0 0 22 14"><path d="M0 7h20M14 1l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
     <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10" cy="10" r="7" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M15.2 15.2L22 22" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
@@ -29,7 +29,7 @@
   <!-- ============ 1. Header ============ -->
   <header class="site-header" data-rendering="Header">
     <div class="container site-header__bar">
-      <a class="site-header__logo" href="/">
+      <a class="site-header__logo" href="index.html">
         <img src="assets/images/logo-uwa.png" alt="The University of Western Australia" width="292" height="105">
       </a>
       <div class="site-header__actions">
@@ -41,20 +41,9 @@
         </button>
       </div>
     </div>
-    <nav class="site-nav" id="site-nav" aria-label="Main">
-      <ul class="container">
-        <li><a href="why-uwa-india.html">Why UWA India</a></li>
-        <li><a href="undergraduate-courses.html">Undergraduate courses</a></li>
-        <li><a href="postgraduate-courses.html">Postgraduate courses</a></li>
-        <li><a href="how-to-apply.html">How to apply</a></li>
-        <li><a href="scholarships.html">Fees and scholarships</a></li>
-        <li><a href="/student-life">Student life</a></li>
-        <li><a href="/campuses">Campuses</a></li>
-        <li><a href="/contact">Contact us</a></li>
-      </ul>
-    </nav>
+    <nav class="site-nav" id="site-nav" aria-label="Main"><ul class="container nav-groups"><li><a href="index.html" aria-current="page">Home</a></li><li><details class="nav-group"><summary>Study</summary><ul><li><a href="study.html">Study overview</a></li><li><a href="why-uwa-india.html">Why UWA India</a></li><li><a href="undergraduate-courses.html">Undergraduate courses</a></li><li><a href="postgraduate-courses.html">Postgraduate courses</a></li><li><a href="fees.html">Fees</a></li><li><a href="scholarships.html">Scholarships</a></li><li><a href="english-language-requirements.html">English language requirements</a></li></ul></details></li><li><details class="nav-group"><summary>How to apply</summary><ul><li><a href="how-to-apply.html">Application guide</a></li><li><a href="faqs.html">FAQs</a></li><li><a href="contact.html">Contact us</a></li></ul></details></li><li><details class="nav-group"><summary>Student life</summary><ul><li><a href="student-life.html">Student life overview</a></li><li><a href="events.html">Events</a></li><li><a href="safety-on-campus.html">Safety on campus</a></li><li><a href="student-support-services.html">Student support services</a></li><li><a href="campus-facilities.html">Campus facilities</a></li><li><a href="campus-mumbai.html">Mumbai campus</a></li><li><a href="campus-chennai.html">Chennai campus</a></li></ul></details></li><li><details class="nav-group"><summary>Current students</summary><ul><li><a href="current-students.html">Current students overview</a></li><li><a href="academic-support.html">Academic support</a></li><li><a href="library.html">Library</a></li><li><a href="lms.html">LMS</a></li><li><a href="career-support.html">Career support</a></li></ul></details></li><li><details class="nav-group"><summary>Careers</summary><ul><li><a href="careers.html">Work with UWA India</a></li></ul></details></li></ul></nav>
     <div class="site-search" id="site-search">
-      <form class="container" role="search" action="/search">
+      <form class="container" role="search" action="search.html">
         <label class="sr-only" for="site-search-input">Search UWA India</label>
         <input id="site-search-input" type="search" name="q" placeholder="Search UWA India">
         <button type="submit" aria-label="Search"><svg width="20" height="20" aria-hidden="true"><use href="#i-search"/></svg></button>
@@ -66,7 +55,7 @@
     <ol class="container"><li><a href="https://www.uwa.edu.au/">UWA</a></li></ol>
   </nav>
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <!-- ============ 2. Hero ============ -->
     <section class="hero" data-rendering="HeroBanner">
       <div class="hero__media">
@@ -76,7 +65,7 @@
         <h1 class="hero__title">A world-class UWA degree, now in India</h1>
         <p class="hero__text">Gain the skills, industry experience and global perspective needed to succeed in tomorrow's workforce through UWA India.</p>
         <div class="hero__ctas">
-          <a class="btn btn--white" href="/courses">Find your course</a>
+          <a class="btn btn--white" href="study.html#courses">Find your course</a>
           <a class="btn btn--ghost-white" href="how-to-apply.html">Apply now</a>
         </div>
       </div>
@@ -121,7 +110,7 @@
             <li>Future-focused learning</li>
             <li>Global perspective</li>
           </ul>
-          <a class="btn btn--outline career__cta" href="/careers">Explore career outcomes</a>
+          <a class="btn btn--outline career__cta" href="career-support.html">Explore career outcomes</a>
         </div>
         <div class="career__media">
           <img src="assets/images/career-students.jpg" alt="Two students talking on stone steps surrounded by trees" width="1097" height="615" loading="lazy">
@@ -130,22 +119,7 @@
     </section>
 
     <!-- ============ 5. Course search ============ -->
-    <section class="section course-search" data-rendering="CourseSearch" aria-labelledby="course-search-title">
-      <div class="container">
-        <div class="course-search__wrap">
-          <h2 class="course-search__label" id="course-search-title">Find your course at UWA India</h2>
-          <form class="course-search__form" role="search" action="/courses">
-            <label class="sr-only" for="course-q">Search courses</label>
-            <input id="course-q" type="search" name="q" placeholder="Search by: Study area (e.g. Business, STEM),   Level">
-            <button type="submit" aria-label="Search courses"><svg aria-hidden="true"><use href="#i-search"/></svg></button>
-          </form>
-          <div class="course-search__meta">
-            <p class="course-search__hint">(Undergraduate / Postgraduate) ,&nbsp;&nbsp; Location</p>
-            <a class="link-arrow" href="/courses">Explore Courses <svg class="icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section class="study-section container" aria-labelledby="course-search-title"><h2 id="course-search-title">Find your course at UWA India</h2><form class="course-filter" action="study.html#courses" method="get" data-course-finder role="search"><label>Search by course or study area<input class="filter-control" name="q" type="search" placeholder="Business, computing, data…"></label><label>Level of study<select name="level" class="filter-control"><option value="">All levels</option><option>Undergraduate</option><option>Postgraduate</option></select></label><label>Campus<select name="campus" class="filter-control"><option value="">All campuses</option><option>Mumbai</option><option>Chennai</option></select></label><button class="btn btn--primary" type="submit">Find courses</button></form></section>
 
     <!-- ============ 6. Our Campuses ============ -->
     <section class="section campuses" data-rendering="CampusCards" aria-labelledby="campuses-title">
@@ -154,7 +128,7 @@
         <p class="lead-center">Choose your campus in the heart of India's business and innovation hubs.</p>
       </div>
       <div class="campuses__grid">
-        <a class="campus-card" href="/campuses/mumbai">
+        <a class="campus-card" href="campus-mumbai.html">
           <img src="assets/images/campus-mumbai.jpg" alt="Students working together in a recording studio" width="797" height="444" loading="lazy">
           <div class="campus-card__body">
             <h3 class="campus-card__title">Mumbai Campus</h3>
@@ -162,7 +136,7 @@
             <svg class="icon-arrow campus-card__arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
           </div>
         </a>
-        <a class="campus-card" href="/campuses/chennai">
+        <a class="campus-card" href="campus-chennai.html">
           <img src="assets/images/campus-chennai.jpg" alt="Two students walking through a sandstone colonnade" width="797" height="444" loading="lazy">
           <div class="campus-card__body">
             <h3 class="campus-card__title">Chennai Campus</h3>
@@ -176,8 +150,8 @@
     <!-- ============ 7. Quick links ============ -->
     <nav class="section quick-links" data-rendering="QuickLinks" aria-label="Quick links">
       <ul class="container quick-links__grid">
-        <li><a href="/courses"><span>Find a course</span><svg class="icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
-        <li><a href="/scholarships"><span>Scholarships</span><svg class="icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+        <li><a href="study.html#courses"><span>Find a course</span><svg class="icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+        <li><a href="scholarships.html"><span>Scholarships</span><svg class="icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
         <li><a href="how-to-apply.html"><span>Apply now</span><svg class="icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
         <li><a href="#register"><span>Speak to an Advisor</span><svg class="icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
       </ul>
@@ -230,7 +204,7 @@
       <div class="container">
         <h2 class="heading-section" id="next-title">Ready to start your journey?</h2>
         <ul class="next-steps__grid">
-          <li><a class="next-card" href="/courses">Explore courses <svg class="icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a class="next-card" href="study.html#courses">Explore courses <svg class="icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
           <li><a class="next-card" href="how-to-apply.html">Apply now <svg class="icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
           <li><a class="next-card" href="#register">Talk to an advisor <svg class="icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
         </ul>
@@ -238,166 +212,23 @@
     </section>
 
     <!-- ============ 12. Register your interest ============ -->
-    <section class="enquiry" id="register" data-rendering="EnquiryForm" aria-labelledby="enquiry-title">
-      <div class="container">
-        <div class="enquiry__head">
-          <span class="pill">Get in touch</span>
-          <h2 class="heading-section enquiry__title" id="enquiry-title">Register your interest</h2>
-          <p class="enquiry__intro">Whichever path brings you to UWA India — applicant, family member, agent, or future colleague — start here. We'll guide you the rest of the way.</p>
-        </div>
-
-        <div class="enquiry__card">
-          <div class="audience" role="group" aria-label="I am a">
-            <button class="audience__tile" type="button" data-audience="prospective" aria-pressed="true">
-              <span class="audience__icon"><svg aria-hidden="true"><use href="#i-cap"/></svg></span>
-              <span class="audience__title">Prospective Student / Parent / Guardian</span>
-              <span class="audience__sub">Register interest in a programme or course</span>
-            </button>
-            <button class="audience__tile" type="button" data-audience="agent" aria-pressed="false">
-              <span class="audience__icon"><svg aria-hidden="true"><use href="#i-user-plus"/></svg></span>
-              <span class="audience__title">Education Agent / Others</span>
-              <span class="audience__sub">Partner with us</span>
-            </button>
-            <button class="audience__tile" type="button" data-audience="staff" aria-pressed="false">
-              <span class="audience__icon"><svg aria-hidden="true"><use href="#i-briefcase"/></svg></span>
-              <span class="audience__title">Aspiring Staff</span>
-              <span class="audience__sub">Teaching &amp; non-teaching roles</span>
-            </button>
-            <button class="audience__tile" type="button" data-audience="current" aria-pressed="false">
-              <span class="audience__icon"><svg aria-hidden="true"><use href="#i-help"/></svg></span>
-              <span class="audience__title">Current Student / Staff</span>
-              <span class="audience__sub">Need support? Raise a request</span>
-            </button>
-          </div>
-
-          <form class="form" id="enquiry-form" novalidate>
-            <fieldset style="border:0;padding:0;margin:0">
-              <legend class="form__group-label">Enquiring as <span class="req" aria-hidden="true">*</span></legend>
-              <div class="segmented">
-                <div class="segmented__opt">
-                  <input type="radio" name="enquiringAs" id="ea-student" value="Student" checked>
-                  <label for="ea-student"><svg class="check" aria-hidden="true"><use href="#i-check"/></svg>Student</label>
-                </div>
-                <div class="segmented__opt">
-                  <input type="radio" name="enquiringAs" id="ea-parent" value="Parent/Guardian">
-                  <label for="ea-parent"><svg class="check" aria-hidden="true"><use href="#i-check"/></svg>Parent/Guardian</label>
-                </div>
-                <div class="segmented__opt">
-                  <input type="radio" name="enquiringAs" id="ea-others" value="Others">
-                  <label for="ea-others"><svg class="check" aria-hidden="true"><use href="#i-check"/></svg>Others</label>
-                </div>
-              </div>
-            </fieldset>
-
-            <div class="field">
-              <label class="field__label" for="f-name"><span id="f-name-label">Student Name</span> <span class="req">*</span></label>
-              <input class="field__control" id="f-name" name="name" type="text" placeholder="Enter student name" autocomplete="name" required>
-              <p class="field__error">Please enter a name.</p>
-            </div>
-
-            <div class="field">
-              <label class="field__label" for="f-email">Email Address <span class="req">*</span></label>
-              <input class="field__control" id="f-email" name="email" type="email" placeholder="name@example.com" autocomplete="email" required>
-              <p class="field__error">Please enter a valid email address.</p>
-            </div>
-
-            <div class="field">
-              <label class="field__label" for="f-mobile">Mobile Number <span class="req">*</span></label>
-              <div class="field__row">
-                <select class="field__control" id="f-code" name="countryCode" aria-label="Country code">
-                  <option value="+91" selected>+91 India</option>
-                  <option value="+61">+61 Australia</option>
-                  <option value="+971">+971 UAE</option>
-                  <option value="+65">+65 Singapore</option>
-                  <option value="+44">+44 UK</option>
-                  <option value="+1">+1 USA/Canada</option>
-                </select>
-                <input class="field__control" id="f-mobile" name="mobile" type="tel" inputmode="numeric" placeholder="Enter Mobile Number" autocomplete="tel-national" required>
-              </div>
-              <p class="field__error">Please enter a valid mobile number.</p>
-            </div>
-
-            <div class="field">
-              <label class="field__label" for="f-state">State <span class="req">*</span></label>
-              <select class="field__control" id="f-state" name="state" required>
-                <option value="">Select State</option>
-              </select>
-              <p class="field__error">Please select a state.</p>
-            </div>
-
-            <div class="field">
-              <label class="field__label" for="f-city">City <span class="req">*</span></label>
-              <select class="field__control" id="f-city" name="city" required disabled>
-                <option value="">Select State first</option>
-              </select>
-              <p class="field__error">Please select a city.</p>
-            </div>
-
-            <div class="field">
-              <label class="field__label" for="f-campus">Campus <span class="req">*</span></label>
-              <select class="field__control" id="f-campus" name="campus" required>
-                <option value="">Select Campus</option>
-              </select>
-              <p class="field__error">Please select a campus.</p>
-            </div>
-
-            <div class="field">
-              <label class="field__label" for="f-program">Program <span class="req">*</span></label>
-              <select class="field__control" id="f-program" name="program" required disabled>
-                <option value="">Select Campus first</option>
-              </select>
-              <p class="field__error">Please select a program.</p>
-            </div>
-
-            <div class="field">
-              <label class="field__label" for="f-course">Course <span class="req">*</span></label>
-              <select class="field__control" id="f-course" name="course" required disabled>
-                <option value="">Select Programme first</option>
-              </select>
-              <p class="field__error">Please select a course.</p>
-            </div>
-
-            <div class="field">
-              <label class="field__label" for="f-intake">Select Intake Period <span class="req">*</span></label>
-              <select class="field__control" id="f-intake" name="intake" required>
-                <option value="">Select Intake Period</option>
-              </select>
-              <p class="field__error">Please select an intake period.</p>
-            </div>
-
-            <div class="field">
-              <label class="field__label" for="f-message">Optional Message</label>
-              <textarea class="field__control" id="f-message" name="message" placeholder="Enter Message"></textarea>
-            </div>
-
-            <div class="field">
-              <label class="field__label" for="f-captcha">Captcha <span class="req">*</span></label>
-              <div class="captcha">
-                <canvas id="captcha-canvas" width="180" height="44" role="img" aria-label="Captcha image"></canvas>
-                <button type="button" id="captcha-refresh" aria-label="Get a new captcha"><svg aria-hidden="true"><use href="#i-refresh"/></svg></button>
-              </div>
-              <input class="field__control" id="f-captcha" name="captcha" type="text" placeholder="Enter Captcha" autocomplete="off" required>
-              <p class="field__error">The captcha doesn't match. Please try again.</p>
-            </div>
-
-            <div class="consent" id="consent-box">
-              <input type="checkbox" id="f-consent" name="consent" required>
-              <label for="f-consent">You confirm that you are 18 years of age or older or, if You are under 18, that your parent or legal guardian has reviewed this information and is providing consent on your behalf. You consent to UWA India collecting, storing, processing, and using your personal data for your enquiry/application and to contacting you via Email, SMS, WhatsApp, or Phone, in accordance with the <a href="/privacy-policy">Privacy Policy</a>.</label>
-            </div>
-
-            <button class="form__submit" type="submit">Submit <svg aria-hidden="true" viewBox="0 0 12 12"><path d="M0 6h10M6 2l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
-          </form>
-
-          <div class="form__success" id="enquiry-success" hidden tabindex="-1">
-            <h3>Thank you for registering your interest</h3>
-            <p>Our team will be in touch shortly to guide you through the next steps.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ============ 13. Footer ============ -->
+    <section class="enquiry container" id="register"><section class="enquiry-module" id="home-enquiry" aria-labelledby="home-enquiry-title" data-rendering="EnquiryForm">
+ <h2 id="home-enquiry-title">Let’s connect</h2><p>Tell our team what you would like to know about studying at UWA India. This form prepares an email enquiry for you to send.</p>
+ <form data-enquiry-form>
+ <div class="enquiry-grid">
+ <div><label for="home-enquiry-name">Your name (required)</label><input id="home-enquiry-name" name="name" autocomplete="name" required maxlength="120"></div>
+ <div><label for="home-enquiry-email">Email address (required)</label><input id="home-enquiry-email" name="email" type="email" autocomplete="email" required maxlength="254"></div>
+ <div><label for="home-enquiry-phone">Phone number</label><input id="home-enquiry-phone" name="phone" type="tel" autocomplete="tel" maxlength="30"></div>
+ <div><label for="home-enquiry-campus">Preferred campus</label><select id="home-enquiry-campus" name="campus"><option value="">Please select</option><option>Mumbai</option><option>Chennai</option><option>Not sure yet</option></select></div>
+ <div class="full-field"><label for="home-enquiry-course">Course or enquiry topic</label><select id="home-enquiry-course" name="topic"><option>General enquiry</option><option>Bachelor of Science (Computer Science)</option><option>Bachelor of Science (Data Science)</option><option>Bachelor of Science (Cybersecurity)</option><option>Bachelor of Advanced Computer Science — Artificial Intelligence</option><option>Bachelor of Business (Business Management)</option><option>Bachelor of Business (Global Business)</option><option>Bachelor of Business (Enterprise and Innovation)</option><option>Master of Information Technology</option><option>Master of Business Administration</option><option>Fees and scholarships</option><option>Student support</option></select></div>
+ <div class="full-field"><label for="home-enquiry-message">Your message (required)</label><textarea id="home-enquiry-message" name="message" required maxlength="4000" rows="5"></textarea></div>
+ </div><label class="enquiry-consent"><input type="checkbox" required name="consent"><span>I agree to include these details in an email enquiry to UWA India. I have read the <a href="https://www.uwa.edu.au/privacy">privacy information</a>.</span></label>
+ <button class="btn btn--primary" type="submit">Prepare email enquiry</button>
+ <p class="form-status" role="status" aria-live="polite"></p>
+ <a class="enquiry-fallback" href="mailto:info.uwaindia@uwa.edu.au">Email info.uwaindia@uwa.edu.au directly</a>
+ <noscript><p>You can email our team directly using the link above.</p></noscript>
+ </form></section></section>
+  </main>  <!-- ============ 13. Footer ============ -->
   <div class="container back-to-top-wrap">
     <a class="back-to-top" href="#top">Back to top
       <svg aria-hidden="true" viewBox="0 0 10 18"><path d="M5 18V2M1 6l4-4 4 4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
@@ -408,8 +239,8 @@
       <p class="site-footer__name">The University of Western Australia</p>
       <address>35 Stirling Highway<br>Perth WA 6009 Australia</address>
       <a class="site-footer__phone" href="tel:+61864886000">(+61 8) 6488 6000</a>
-      <p class="site-footer__emergency">Emergency<br><a href="tel:+61864882222">(+61 8) 6488 2222</a></p>
-      <p class="site-footer__cricos">CRICOS 00126G | PRV12169, Australian University</p>
+      <p class="site-footer__emergency">Perth campus emergency<br><a href="tel:+61864882222">(+61 8) 6488 2222</a></p>
+      <p class="footer-location-note">For an emergency in India, call <a href="tel:112">112</a>. <a href="contact.html">UWA India enquiries</a>.</p><p class="site-footer__cricos">CRICOS 00126G | PRV12169, Australian University</p>
       <ul class="site-footer__links">
         <li><a href="https://www.uwa.edu.au/accessibility">Accessibility</a></li>
         <li><a href="https://www.uwa.edu.au/jobs">Jobs</a></li>
@@ -433,13 +264,27 @@
         </button>
         <ul class="country__menu" id="country-menu" hidden>
           <li><a href="https://www.uwa.edu.au/">Australia</a></li>
-          <li><a href="/" aria-current="page">India</a></li>
+          <li><a href="home.html">India</a></li>
         </ul>
       </div>
-    </div>
+      <div class="footer-acknowledgement">
+        <img src="assets/images/indigenous-artwork.png" alt="Original illustration by Dr Richard Barry Walley OAM" width="100" height="100" loading="lazy">
+        <div><p>The University of Western Australia acknowledges all the Traditional Owners of lands across Australia, including the Whadjuk Noongar people at the Boorloo (Perth) campus and the Menang Noongar people at the Kinjarling (Albany) campus. We recognise and celebrate that Traditional Owners remain the custodians of their lands, and continue to practise their values, languages, beliefs and knowledge.</p>
+        <p>Original illustration by Artist Dr Richard Barry Walley OAM</p><a href="https://www.uwa.edu.au/indigenous-commitment">Indigenous Portfolio</a></div>
+      </div>
+      <nav class="footer-social" aria-label="Social media">
+        <a href="https://www.facebook.com/universitywa" aria-label="UWA on Facebook"><img src="assets/images/social-facebook.svg" alt="" width="25" height="25" loading="lazy"></a>
+        <a href="https://www.instagram.com/universitywa" aria-label="UWA on Instagram"><img src="assets/images/social-instagram.svg" alt="" width="25" height="25" loading="lazy"></a>
+        <a href="https://x.com/uwanews" aria-label="UWA on X"><img src="assets/images/social-x.svg" alt="" width="25" height="25" loading="lazy"></a>
+        <a href="https://www.youtube.com/user/universitywa" aria-label="UWA on YouTube"><img src="assets/images/social-youtube.svg" alt="" width="25" height="25" loading="lazy"></a>
+        <a href="https://www.linkedin.com/school/university-of-western-australia/" aria-label="UWA on LinkedIn"><img src="assets/images/social-linkedin.svg" alt="" width="25" height="25" loading="lazy"></a>
+      </nav>
+      <a class="footer-go8" href="https://go8.edu.au/"><img src="assets/images/group-of-eight.svg" alt="Group of Eight Australia member" width="108" height="58" loading="lazy"></a>
+      <details class="footer-this-page"><summary>This page</summary><a href="#main-content">UWA India</a></details>
+</div>
   </footer>
 
-  <script src="assets/js/form-data.js"></script>
   <script src="assets/js/main.js"></script>
+<script src="assets/js/site.js"></script>
 </body>
 </html>

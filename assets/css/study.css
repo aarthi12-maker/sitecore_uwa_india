@@ -1,0 +1,44 @@
+/* Study navigation hub — content assembled from the supplied PDF pp. 3–7.
+   Shared UWA logo, Melun Display / TT Norms Pro fonts, and core brand colours. */
+.study-page { --fw-body: 400; color: #111; }
+.study-hero { max-width: 1440px; margin-inline: auto; }
+.study-hero__image { width: 100%; height: clamp(260px, 46vw, 460px); object-fit: cover; object-position: 50% 30%; }
+.study-hero__panel { position: relative; margin: -80px var(--gutter) 0; padding: 28px 24px 76px; background: var(--c-blue); color: #fff; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 40px), 50% 100%, 0 calc(100% - 40px)); }
+.study-hero h1 { font-family: var(--font-display); text-transform: uppercase; font-size: clamp(34px, 7.5vw, 52px); font-weight: 700; line-height: 1; letter-spacing: normal; }
+.study-hero p { margin-top: 16px; max-width: 780px; font-size: 18px; line-height: 1.5; }
+.study-actions { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 24px; }
+.study-section { margin-top: 80px; scroll-margin-top: 24px; }
+.study-section h2 { font-size: clamp(28px, 5vw, 36px); line-height: 1.2; font-weight: 500; color: var(--c-blue); }
+.study-section h3 { font-size: 25px; line-height: 1.2; font-weight: 600; }
+.study-section p { font-size: 17px; line-height: 1.5; }
+.study-course-grid, .study-next-grid { display: grid; gap: 24px; margin-top: 32px; }
+.study-course-card { display: flex; flex-direction: column; border: 1px solid #dbdbdb; border-radius: 6px; overflow: hidden; color: inherit; text-decoration: none; }
+.study-course-card > img { width: 100%; aspect-ratio: 1.7; object-fit: cover; }
+.study-course-card__body { padding: 28px 24px; display: flex; flex-direction: column; flex: 1; }
+.study-course-card p, .study-next-card p { margin-top: 16px; }
+.study-link { display: flex; align-items: center; justify-content: space-between; gap: 16px; color: var(--c-blue); font-size: 17px; font-weight: 500; padding-top: 24px; margin-top: auto; }
+.study-link > span { font-size: 28px; line-height: 1; }
+.study-course-card:hover .study-link, .study-next-card:hover .study-link { text-decoration: underline; text-underline-offset: 4px; }
+.study-why { display: grid; gap: 32px; }
+.study-why > img { width: 100%; height: auto; }
+.study-why p { margin-top: 20px; }
+.study-why .btn { margin-top: 24px; }
+.study-next-card { display: flex; flex-direction: column; border-top: 6px solid var(--c-blue); background: #f2efec; padding: 28px 24px; color: inherit; text-decoration: none; }
+.study-advice { text-align: center; }
+.study-advice p { margin: 20px auto 0; max-width: 640px; }
+.study-advice .btn { margin-top: 24px; }
+.study-page .back-to-top-wrap { margin-top: 112px; }
+@media (min-width: 768px) {
+ .study-hero__panel { max-width: 1200px; margin-inline: auto; padding: 40px 40px 88px; width: calc(100% - var(--gutter) * 2); }
+ .study-course-grid, .study-next-grid { grid-template-columns: 1fr 1fr; }
+ .study-why { grid-template-columns: 1fr 1fr; align-items: center; gap: 48px; }
+ .study-why > img { height: 100%; object-fit: cover; min-height: 320px; }
+}
+@media (max-width: 479px) {
+ .study-hero__panel { padding: 24px 20px 64px; }
+ .study-hero p { font-size: 16px; }
+ .study-section { margin-top: 64px; }
+ .study-section h3 { font-size: 23px; }
+ .study-section p, .study-link { font-size: 16px; }
+ .study-actions .btn { padding-inline: 18px; font-size: 16px; }
+}

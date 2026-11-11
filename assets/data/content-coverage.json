@@ -1,0 +1,165 @@
+{
+  "generated_pages": [
+    {
+      "page": "student-life.html",
+      "title": "Student life",
+      "source": "PDF pages 8\u20139"
+    },
+    {
+      "page": "events.html",
+      "title": "Events",
+      "source": "PDF page 9; official UWA India event directories"
+    },
+    {
+      "page": "safety-on-campus.html",
+      "title": "Safety on campus",
+      "source": "PDF page 9 (campus-specific content awaiting confirmation); MHA ERSS and official UWA India wellbeing page"
+    },
+    {
+      "page": "student-support-services.html",
+      "title": "Student support services",
+      "source": "PDF page 9; linked support sections from pages 10\u201316"
+    },
+    {
+      "page": "campus-facilities.html",
+      "title": "Campus facilities",
+      "source": "PDF pages 9\u201310 and 14; addresses from official UWA India contact page"
+    },
+    {
+      "page": "campus-mumbai.html",
+      "title": "Mumbai campus",
+      "source": "PDF pages 9\u201310; official UWA India contact page"
+    },
+    {
+      "page": "campus-chennai.html",
+      "title": "Chennai campus",
+      "source": "PDF pages 9\u201310; official UWA India contact page"
+    },
+    {
+      "page": "current-students.html",
+      "title": "Current students",
+      "source": "PDF pages 10\u201316"
+    },
+    {
+      "page": "academic-support.html",
+      "title": "Academic support",
+      "source": "PDF pages 10\u201311"
+    },
+    {
+      "page": "library.html",
+      "title": "Library",
+      "source": "PDF pages 11\u201314"
+    },
+    {
+      "page": "lms.html",
+      "title": "LMS",
+      "source": "PDF pages 14\u201316"
+    },
+    {
+      "page": "fees.html",
+      "title": "Fees",
+      "source": "PDF page 8 requests existing website content; official course fee pages verified 11 November 2026"
+    },
+    {
+      "page": "english-language-requirements.html",
+      "title": "English language requirements",
+      "source": "PDF page 8; official UWA English language requirements and UWA India MBA page, checked 11 November 2026"
+    },
+    {
+      "page": "careers.html",
+      "title": "Work with UWA India",
+      "source": "PDF page 17; official UWA India Work with UWA page"
+    },
+    {
+      "page": "career-support.html",
+      "title": "Career support",
+      "source": "Official UWA India student careers-support page and course catalogue"
+    },
+    {
+      "page": "contact.html",
+      "title": "Contact us",
+      "source": "Official UWA India Contact us and wellbeing pages"
+    },
+    {
+      "page": "faqs.html",
+      "title": "Frequently asked questions",
+      "source": "Answers summarise supplied PDF pages 3\u201316"
+    },
+    {
+      "page": "policies.html",
+      "title": "Policies and information",
+      "source": "PDF page 17 requests existing policy links"
+    },
+    {
+      "page": "search.html",
+      "title": "Search UWA India",
+      "source": "Local site navigation feature"
+    },
+    {
+      "page": "course-computer-science.html",
+      "title": "Bachelor of Science (Computer Science)",
+      "source": "https://india.uwa.edu.au/courses/computer-science"
+    },
+    {
+      "page": "course-data-science.html",
+      "title": "Bachelor of Science (Data Science)",
+      "source": "https://india.uwa.edu.au/courses/data-science"
+    },
+    {
+      "page": "course-cybersecurity.html",
+      "title": "Bachelor of Science (Cybersecurity)",
+      "source": "https://india.uwa.edu.au/courses/cybersecurity"
+    },
+    {
+      "page": "course-artificial-intelligence-extended-major.html",
+      "title": "Bachelor of Advanced Computer Science \u2014 Artificial Intelligence",
+      "source": "https://india.uwa.edu.au/courses/artificial-intelligence-extended-major"
+    },
+    {
+      "page": "course-business-management.html",
+      "title": "Bachelor of Business (Business Management)",
+      "source": "https://india.uwa.edu.au/courses/business-management"
+    },
+    {
+      "page": "course-global-business.html",
+      "title": "Bachelor of Business (Global Business)",
+      "source": "https://india.uwa.edu.au/courses/global-business"
+    },
+    {
+      "page": "course-enterprise-and-innovation.html",
+      "title": "Bachelor of Business (Enterprise and Innovation)",
+      "source": "https://india.uwa.edu.au/courses/enterprise-and-innovation"
+    },
+    {
+      "page": "course-master-of-information-technology.html",
+      "title": "Master of Information Technology",
+      "source": "https://india.uwa.edu.au/courses/master-of-information-technology"
+    },
+    {
+      "page": "course-master-of-business-administration.html",
+      "title": "Master of Business Administration",
+      "source": "https://india.uwa.edu.au/courses/master-of-business-administration"
+    },
+    {
+      "page": "site-map.html",
+      "title": "All pages",
+      "source": "Website navigation"
+    }
+  ],
+  "existing_pages": [
+    "index.html",
+    "home.html",
+    "study.html",
+    "why-uwa-india.html",
+    "undergraduate-courses.html",
+    "postgraduate-courses.html",
+    "how-to-apply.html",
+    "scholarships.html"
+  ],
+  "content_gaps": [
+    "Campus-specific security numbers, assembly points and after-hours support require confirmation.",
+    "Official event listing dates conflict, so the local calendar has no asserted dates.",
+    "Enquiries prepare email drafts; no CRM or server submission is configured.",
+    "Existing scholarship and postgraduate photos may differ in crop from supplied screenshots."
+  ]
+}

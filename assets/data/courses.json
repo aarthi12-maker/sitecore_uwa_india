@@ -1,0 +1,143 @@
+[
+  {
+    "slug": "computer-science",
+    "name": "Bachelor of Science (Computer Science)",
+    "level": "Undergraduate",
+    "campuses": [
+      "Mumbai",
+      "Chennai"
+    ],
+    "duration": "3 years",
+    "area": "Computing",
+    "overview": "Develop knowledge and skills in computer science, programming and the design of computing solutions.",
+    "domestic": "14,52,200",
+    "international": "16,69,800",
+    "url": "course-computer-science.html",
+    "source": "https://india.uwa.edu.au/courses/computer-science"
+  },
+  {
+    "slug": "data-science",
+    "name": "Bachelor of Science (Data Science)",
+    "level": "Undergraduate",
+    "campuses": [
+      "Mumbai",
+      "Chennai"
+    ],
+    "duration": "3 years",
+    "area": "Data",
+    "overview": "Explore the analysis and interpretation of data, building skills for data-driven problem solving.",
+    "domestic": "14,52,200",
+    "international": "16,69,800",
+    "url": "course-data-science.html",
+    "source": "https://india.uwa.edu.au/courses/data-science"
+  },
+  {
+    "slug": "cybersecurity",
+    "name": "Bachelor of Science (Cybersecurity)",
+    "level": "Undergraduate",
+    "campuses": [
+      "Mumbai"
+    ],
+    "duration": "3 years",
+    "area": "Computing",
+    "overview": "Develop your understanding of cybersecurity and the protection of digital systems and information.",
+    "domestic": "14,52,200",
+    "international": "16,69,800",
+    "url": "course-cybersecurity.html",
+    "source": "https://india.uwa.edu.au/courses/cybersecurity"
+  },
+  {
+    "slug": "artificial-intelligence-extended-major",
+    "name": "Bachelor of Advanced Computer Science \u2014 Artificial Intelligence",
+    "level": "Undergraduate",
+    "campuses": [
+      "Mumbai",
+      "Chennai"
+    ],
+    "duration": "4 years",
+    "area": "Computing",
+    "overview": "Study advanced computing and artificial intelligence, developing skills for intelligent computational systems.",
+    "domestic": "17,93,000",
+    "international": "20,61,950",
+    "url": "course-artificial-intelligence-extended-major.html",
+    "source": "https://india.uwa.edu.au/courses/artificial-intelligence-extended-major"
+  },
+  {
+    "slug": "business-management",
+    "name": "Bachelor of Business (Business Management)",
+    "level": "Undergraduate",
+    "campuses": [
+      "Mumbai",
+      "Chennai"
+    ],
+    "duration": "3 years",
+    "area": "Business",
+    "overview": "Build a foundation in business and management, preparing to understand organisations and their operations.",
+    "domestic": "14,52,200",
+    "international": "16,69,800",
+    "url": "course-business-management.html",
+    "source": "https://india.uwa.edu.au/courses/business-management"
+  },
+  {
+    "slug": "global-business",
+    "name": "Bachelor of Business (Global Business)",
+    "level": "Undergraduate",
+    "campuses": [
+      "Mumbai"
+    ],
+    "duration": "3 years",
+    "area": "Business",
+    "overview": "Explore business in an international context and the opportunities and challenges of operating across borders.",
+    "domestic": "14,52,200",
+    "international": "16,69,800",
+    "url": "course-global-business.html",
+    "source": "https://india.uwa.edu.au/courses/global-business"
+  },
+  {
+    "slug": "enterprise-and-innovation",
+    "name": "Bachelor of Business (Enterprise and Innovation)",
+    "level": "Undergraduate",
+    "campuses": [
+      "Mumbai"
+    ],
+    "duration": "3 years",
+    "area": "Business",
+    "overview": "Develop your understanding of enterprise and innovation, including the creation and growth of new business ideas.",
+    "domestic": "14,52,200",
+    "international": "16,69,800",
+    "url": "course-enterprise-and-innovation.html",
+    "source": "https://india.uwa.edu.au/courses/enterprise-and-innovation"
+  },
+  {
+    "slug": "master-of-information-technology",
+    "name": "Master of Information Technology",
+    "level": "Postgraduate",
+    "campuses": [
+      "Mumbai",
+      "Chennai"
+    ],
+    "duration": "2 years",
+    "area": "Computing",
+    "overview": "Build expertise in software development, data, artificial intelligence and computing systems.",
+    "domestic": "19,25,000",
+    "international": "22,13,750",
+    "url": "course-master-of-information-technology.html",
+    "source": "https://india.uwa.edu.au/courses/master-of-information-technology"
+  },
+  {
+    "slug": "master-of-business-administration",
+    "name": "Master of Business Administration",
+    "level": "Postgraduate",
+    "campuses": [
+      "Mumbai",
+      "Chennai"
+    ],
+    "duration": "1 year (accelerated)",
+    "area": "Business",
+    "overview": "Advance your understanding of business functions, management and organisational decision-making.",
+    "domestic": "23,10,000",
+    "international": "26,56,500",
+    "url": "course-master-of-business-administration.html",
+    "source": "https://india.uwa.edu.au/courses/master-of-business-administration"
+  }
+]

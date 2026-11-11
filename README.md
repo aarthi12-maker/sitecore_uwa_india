@@ -1,46 +1,59 @@
-# UWA India — Course listing screens
+# UWA India — complete static website
 
-Run `npm start` and open http://127.0.0.1:3000. The default screen is the home page (`index.html`, also available at `home.html`). Postgraduate courses is at `postgraduate-courses.html`, and undergraduate courses is at `undergraduate-courses.html`. Both are linked in every page’s menu. Other screens are at `why-uwa-india.html`, `scholarships.html`, and `how-to-apply.html`.
+Run `npm start` and open http://127.0.0.1:3000. The homepage remains `index.html` (`home.html` is an alias). Open **All pages** at `site-map.html` to review every screen.
 
-The two layouts follow the supplied course-listing screenshots: full-width laboratory images, overlapping Vivid Blue chevron panels, two hero actions, centred course cards and the complete shared footer. Introductory copy is from the supplied content PDF, pages 6–7. Card titles follow the screenshots. The first two undergraduate image cards have no visible titles in the reference; their accessible names describe course exploration without inventing program names.
+## Screens
 
-Brand reference: UWA Brand Guidelines v1.1, pages 53–54 and 60–68. Uses local Melun Display and TT Norms Pro, Vivid Blue `#0032FF`, UWA Blue `#003087`, white and black, with logo proportions preserved and no display tracking adjustments.
+There are 36 distinct screens, delivered as 37 HTML files including the homepage alias.
 
-The undergraduate banner is cropped from the supplied local course-page design. Campus card images reuse `join-uwa.jpg`. The postgraduate banner uses the same lab photograph from the official UWA High Performance Computing page, but its public rendition is cropped more tightly than the supplied screenshot; the full-frame original is needed for an exact photo match.
+| Area | Screens |
+| --- | --- |
+| Home and Study | Homepage, Study hub, Why UWA India, undergraduate catalogue, postgraduate catalogue |
+| Course details | Seven undergraduate offerings and two postgraduate offerings |
+| Applying | How to apply, Fees, Scholarships, English language requirements, FAQs, Contact us |
+| Student life | Student life, Events, Safety on campus, Student support services, Campus facilities, Mumbai campus, Chennai campus |
+| Current students | Current students hub, Academic support, Library, LMS, Career support |
+| Other navigation | Work with UWA India, Policies, Search, All pages |
 
-Page styles: `assets/css/course-listings.css`. Course cards open a native dialog with the application guide and a prefilled course enquiry email; no unsupported fees, intakes or eligibility criteria are invented. Behaviour: `assets/js/course-listings.js`. Header/footer behaviour remains shared.
+Every page has consistent navigation, breadcrumbs, and the complete branded footer. Navigation distinguishes staff recruitment from student career support.
 
-Validation: Chrome at 390px, 581px and 1440px for both screens; image/font loading, horizontal overflow, course dialog and Escape, menu, search, country selector and Why UWA navigation. No browser errors observed.
+## Content and brand
 
-## Sitecore rendering map
+The supplied **UWA India content – Copy.docx.pdf** is the primary content source. All its named page sections now have screens. Academic support, Library and LMS retain their detailed supplied content. Document metadata, editorial instructions and confidentiality footers are not displayed as public copy.
 
-Each section has a `data-rendering` attribute naming the Sitecore rendering it
-should become when converted to XM Cloud / JSS components:
+The supplied **UWA Brand Guidelines v1.1** govern typography and colours: local Melun Display for uppercase impact headlines with unchanged tracking, TT Norms Pro for supporting content, Vivid Blue `#0032FF`, UWA Blue `#003087`, approved secondary accents, white and black. Original logo proportions are preserved. The homepage's Google substitute fonts have been removed.
 
-| Rendering         | Section                                   | Datasource fields |
-|-------------------|-------------------------------------------|-------------------|
-| `Header`          | Logo, menu, search, page title            | Logo, Nav links |
-| `HeroBanner`      | Hero image + chevron panel                | Image, Title, Text, CTA 1, CTA 2 |
-| `FeatureCarousel` | Why Choose UWA India?                     | Title, child Feature items (Title, Text) |
-| `TextWithImage`   | Build a career                            | Title, Bullet list, CTA, Image |
-| `CourseSearch`    | Find your course                          | Label, Placeholder, Link |
-| `CampusCards`     | Our Campuses                              | Title, Intro, child Campus items (Image, Title, Text, Link) |
-| `QuickLinks`      | 4 arrow links                             | Link list |
-| `JourneySteps`    | Your Journey with UWA India               | Title, Steps, CTA |
-| `PromoCard`       | Join a globally recognised university     | Image, Title, Bullets, CTA |
-| `CtaBanner`       | Need help choosing your path?             | Title, Text, CTA |
-| `LinkCards`       | Ready to start your journey?              | Title, Link list |
-| `EnquiryForm`     | Register your interest                    | → Sitecore Forms / CRM |
-| `Footer`          | Address, contacts, links, country switch  | Footer settings item |
+Pages that the PDF asks to import from the existing website use verified official sources, checked on **11 November 2026**. Course cards now use the current India catalogue, replacing the unverified screenshot labels “Bachelor of Computing” and “Master of Data Science.” Each detail page links to its definitive official course page. Published fees are explicitly first-year figures for 2026 commencing students; they are not presented as future-intake or whole-degree prices.
 
-## Still to replace before go-live
+See [content coverage](docs/content-coverage.md) and the machine-readable `assets/data/content-coverage.json` for provenance and remaining confirmations.
 
-- **Brand tokens** — colours/fonts in `tokens.css` were sampled from the
-  screenshot. Fonts are Google stand-ins (Kumbh Sans, Kanit).
-- **Images & logo** — low-res crops from the screenshot; swap for originals
-  (same filenames).
-- **Why Choose cards 3 & 4** — copy was cut off in the design; placeholder text.
-- **Form data** — programs, courses and intakes in `form-data.js` are samples.
-- **Captcha & submit** — client-side demo only; wire to Sitecore Forms /
-  reCAPTCHA and the CRM endpoint (`TODO(sitecore)` in `main.js`).
-- **Desktop layout** — extrapolated; the design supplied is mobile only.
+## Working interactions
+
+- Search indexes all distinct screens locally; no search backend is required.
+- Course search filters by name/study area, study level and campus. Homepage course search passes those selections to the Study hub.
+- Every course card opens a populated detail page.
+- FAQ sections use keyboard-accessible native disclosures.
+- Enquiry forms validate required fields and consent, then prepare an email draft with an explicit **Open email draft** action and a copyable fallback. They do not send personal data or claim a server submission.
+- Events filter the published campus event-directory links; no unverified event dates are displayed.
+- Campus maps use address-based map links. LMS orientation uses the video supplied in the PDF.
+- Header search/menu support Escape and focus restoration.
+
+## Checks and generation
+
+```sh
+npm run check
+npm run generate
+```
+
+`check` verifies required pages, local assets, links, fragments, single page headings, duplicate IDs and removal of incomplete course cards. `generate` rebuilds document-based pages and upgrades shared components. It is repeatable without accumulating markup. Snapshot templates are in `scripts/templates/`.
+
+Browser validation covered all 37 HTML files at 320px, 390px, 581px and 1440px, plus search, filtering, course navigation, enquiry validation/draft preparation, FAQ and header/footer controls. No missing images, horizontal document overflow or JavaScript errors were observed. External services were not exercised as part of local browser checks.
+
+## Limits requiring external information or integration
+
+- Campus-specific security contacts, assembly points and after-hours arrangements need institutional confirmation. The safety page provides verified India emergency 112 and wellbeing contact information; Perth's emergency contact is clearly labelled.
+- Official event sources contain conflicting dates. The Events screen links to official directories without asserting upcoming dates.
+- No CRM, server submission, authentication or Sitecore deployment is configured. Enquiries use the explicit email-draft workflow.
+- Some existing reference photos are available only as tighter crops or comparable UWA imagery. No exact-photo match is claimed for those assets.
+
+This is a local frontend implementation. It has not been published or migrated into Sitecore. The `data-rendering` attributes identify reusable rendering boundaries for that later integration.
