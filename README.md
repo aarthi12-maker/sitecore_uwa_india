@@ -57,3 +57,9 @@ Browser validation covered all 37 HTML files at 320px, 390px, 581px and 1440px, 
 - Some existing reference photos are available only as tighter crops or comparable UWA imagery. No exact-photo match is claimed for those assets.
 
 This is a local frontend implementation. It has not been published or migrated into Sitecore. The `data-rendering` attributes identify reusable rendering boundaries for that later integration.
+
+## Homepage registration form
+
+The full **Register your interest** form is present on `index.html` and `home.html`, including four enquiry-type tiles, enquiring-as choices, name/email/mobile, state/city, campus/program/course, intake guidance, optional message, client-side captcha and consent. State/city and campus/program/course controls are dependent; cities not listed can be entered manually. No unconfirmed intake dates are displayed. Submit validates the form and prepares a complete email draft. It does not claim CRM submission or server-side captcha protection.
+
+The reusable markup is in `scripts/templates/register-interest.html`, styles in `assets/css/registration.css`, and behaviour in `assets/js/registration.js`. Regeneration preserves this full form.

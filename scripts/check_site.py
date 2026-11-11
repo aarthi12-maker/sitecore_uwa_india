@@ -30,7 +30,7 @@ coverage=json.loads((ROOT/'assets/data/content-coverage.json').read_text())
 for page in coverage['generated_pages']:
  if page['page'] not in pages:errors.append('Missing required page '+page['page'])
 for name in ['index.html','home.html','how-to-apply.html']:
- if 'data-enquiry-form' not in (ROOT/name).read_text():errors.append(name+': enquiry form missing')
+ if not any(marker in (ROOT/name).read_text() for marker in ['data-enquiry-form','data-registration-form']):errors.append(name+': enquiry form missing')
 for name in ['undergraduate-courses.html','postgraduate-courses.html']:
  s=(ROOT/name).read_text()
  if 'data-course="' in s or 'class="sr-only">Explore undergraduate courses' in s:errors.append(name+': placeholder course card remains')

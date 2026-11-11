@@ -1,0 +1,25 @@
+/* Full homepage Register your interest form, matching the supplied design. */
+.home-page .registration { margin-top: 180px; }
+.registration-fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+.registration .enquiry__title { font-family: var(--font-body); }
+.registration .audience__tile { min-width: 0; }
+.registration .audience__title { overflow-wrap: anywhere; }
+.registration .field__row { grid-template-columns: 140px minmax(0,1fr); }
+.registration .field__control { min-width: 0; }
+.registration .field__control:focus-visible { outline: 2px solid var(--c-blue); outline-offset: 2px; }
+.registration .segmented__opt input:focus-visible + label { outline: 3px solid var(--c-blue); }
+.registration-hint { margin-top: 8px; color: var(--c-text-muted); font-size: 12px; line-height: 1.5; }
+.registration .captcha button { min-width: 36px; min-height: 36px; }
+.registration .captcha button svg { width: 20px; height: 20px; }
+.registration .form-status:empty { display: none; }
+.registration-draft { margin-top: 24px; padding: 20px; border-left: 3px solid var(--c-blue); background: #f2efec; }
+.registration-draft .field__label { margin-top: 20px; }
+.registration-draft textarea.field__control { min-height: 200px; }
+@media (max-width: 479px) {
+ .home-page .registration { margin-top: 112px; }
+ .registration .field__row { grid-template-columns: 110px minmax(0,1fr); }
+ .registration .audience { gap: 8px; padding-inline: 8px; }
+ .registration .audience__tile { padding: 14px 10px; }
+ .registration .audience__title { font-size: 13px; }
+ .registration .form { padding-inline: 18px; }
+}

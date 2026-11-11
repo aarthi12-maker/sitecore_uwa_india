@@ -1,0 +1,45 @@
+    <section class="enquiry registration" id="register" aria-labelledby="registration-title" data-rendering="EnquiryForm">
+      <div class="container">
+        <div class="enquiry__head">
+          <span class="pill">Get in touch</span>
+          <h2 class="heading-section enquiry__title" id="registration-title">Register your interest</h2>
+          <p class="enquiry__intro">Whichever path brings you to UWA India — applicant, family member, agent, or future colleague — start here. We’ll guide you the rest of the way.</p>
+        </div>
+        <div class="enquiry__card">
+          <div class="audience" role="group" aria-label="Choose your enquiry type">
+            <button class="audience__tile" type="button" aria-pressed="true" data-audience="Prospective Student / Parent / Guardian"><span class="audience__icon"><svg aria-hidden="true"><use href="#i-cap"/></svg></span><span class="audience__title">Prospective Student / Parent / Guardian</span><span class="audience__sub">Register interest / enquire</span></button>
+            <button class="audience__tile" type="button" aria-pressed="false" data-audience="Education Agent / Others"><span class="audience__icon"><svg aria-hidden="true"><use href="#i-user-plus"/></svg></span><span class="audience__title">Education Agent / Others</span><span class="audience__sub">Partner with us</span></button>
+            <button class="audience__tile" type="button" aria-pressed="false" data-audience="Applying Staff"><span class="audience__icon"><svg aria-hidden="true"><use href="#i-briefcase"/></svg></span><span class="audience__title">Applying Staff</span><span class="audience__sub">Academic / professional roles</span></button>
+            <button class="audience__tile" type="button" aria-pressed="false" data-audience="Current Student / Staff"><span class="audience__icon"><svg aria-hidden="true"><use href="#i-help"/></svg></span><span class="audience__title">Current Student / Staff</span><span class="audience__sub">Need support? Get in touch</span></button>
+          </div>
+          <form class="form registration-form" data-registration-form>
+            <input type="hidden" name="audience" value="Prospective Student / Parent / Guardian">
+            <fieldset class="registration-fieldset"><legend class="form__group-label">Enquiring as <span class="req">*</span></legend>
+              <div class="segmented">
+                <div class="segmented__opt"><input type="radio" name="enquiringAs" id="r-student" value="Student" checked><label for="r-student"><svg class="check" aria-hidden="true"><use href="#i-check"/></svg>Student</label></div>
+                <div class="segmented__opt"><input type="radio" name="enquiringAs" id="r-parent" value="Parent/Guardian"><label for="r-parent"><svg class="check" aria-hidden="true"><use href="#i-check"/></svg>Parent/Guardian</label></div>
+                <div class="segmented__opt"><input type="radio" name="enquiringAs" id="r-others" value="Others"><label for="r-others"><svg class="check" aria-hidden="true"><use href="#i-check"/></svg>Others</label></div>
+              </div>
+            </fieldset>
+            <div class="field"><label class="field__label" for="r-name"><span data-registration-name-label>Student Name</span> <span class="req">*</span></label><input class="field__control" id="r-name" name="name" autocomplete="name" placeholder="Enter student name" required maxlength="120"></div>
+            <div class="field"><label class="field__label" for="r-email">Email Address <span class="req">*</span></label><input class="field__control" id="r-email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required maxlength="254"></div>
+            <div class="field"><label class="field__label" for="r-phone">Mobile Number <span class="req">*</span></label><div class="field__row"><select class="field__control" name="countryCode" aria-label="Country calling code"><option value="+91">+91 India</option><option value="+61">+61 Australia</option><option value="+1">+1 USA / Canada</option><option value="+44">+44 UK</option><option value="Other">Other</option></select><input class="field__control" id="r-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Enter Mobile Number" required maxlength="25"></div></div>
+            <div class="field"><label class="field__label" for="r-state">State <span class="req">*</span></label><select class="field__control" id="r-state" name="state" required><option value="">Select State</option></select></div>
+            <div class="field"><label class="field__label" for="r-city">City <span class="req">*</span></label><select class="field__control" id="r-city" name="city" required disabled><option value="">Select State first</option></select></div>
+            <div class="field" data-other-city hidden><label class="field__label" for="r-city-other">Enter your city <span class="req">*</span></label><input class="field__control" id="r-city-other" name="otherCity" autocomplete="address-level2" maxlength="100" disabled></div>
+            <div class="field"><label class="field__label" for="r-campus">Campus <span class="req">*</span></label><select class="field__control" id="r-campus" name="campus" required><option value="">Select Campus</option><option>Mumbai</option><option>Chennai</option></select></div>
+            <div class="field"><label class="field__label" for="r-program">Program <span class="req">*</span></label><select class="field__control" id="r-program" name="program" required disabled><option value="">Select Campus first</option></select></div>
+            <div class="field"><label class="field__label" for="r-course">Course <span class="req">*</span></label><select class="field__control" id="r-course" name="course" required disabled><option value="">Select Program first</option></select></div>
+            <div class="field"><label class="field__label" for="r-intake">Select Intake Period <span class="req">*</span></label><select class="field__control" id="r-intake" name="intake" required><option value="">Select Intake Period</option><option value="Next available intake — please confirm">Next available intake — please confirm</option><option value="Future intake guidance">I’m exploring a future intake</option></select><p class="registration-hint">Our team will confirm available intake periods for your course.</p></div>
+            <div class="field"><label class="field__label" for="r-message">Optional Message</label><textarea class="field__control" id="r-message" name="message" placeholder="Enter Message" maxlength="4000"></textarea></div>
+            <div class="field"><label class="field__label" for="r-captcha">Captcha <span class="req">*</span></label><div class="captcha"><canvas width="180" height="44" role="img" aria-label="Verification code" data-registration-captcha></canvas><button type="button" data-refresh-captcha aria-label="Get a new verification code"><svg aria-hidden="true"><use href="#i-refresh"/></svg></button></div><input class="field__control" id="r-captcha" name="captcha" placeholder="Enter Captcha" autocomplete="off" aria-describedby="r-captcha-help" required><p class="registration-hint" id="r-captcha-help">Enter the code shown above. The code is also available to screen readers.</p></div>
+            <div class="consent"><input id="r-consent" name="consent" type="checkbox" required><label for="r-consent">You confirm that you are 18 years of age or older, or that your parent or legal guardian has reviewed this information and is providing consent on your behalf. You agree to include these details in your email enquiry and allow UWA India to contact you about your enquiry in accordance with the <a href="https://www.uwa.edu.au/privacy">Privacy Policy</a>.</label></div>
+            <button class="form__submit" type="submit">Submit <svg width="16" height="16" viewBox="0 0 22 14" aria-hidden="true"><path d="M0 7h20M14 1l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+            <p class="registration-hint">Submitting prepares an email draft. Send it from your email app to complete your enquiry.</p>
+            <p class="form-status" role="status" aria-live="polite"></p>
+            <div class="registration-draft" data-registration-draft hidden><a class="btn btn--primary" data-registration-email href="mailto:info.uwaindia@uwa.edu.au">Open email draft</a><label class="field__label" for="r-draft">Or copy this draft into your email app</label><textarea class="field__control" id="r-draft" data-registration-draft-text readonly rows="8"></textarea></div>
+            <noscript><p>Email <a href="mailto:info.uwaindia@uwa.edu.au">info.uwaindia@uwa.edu.au</a> to register your interest.</p></noscript>
+          </form>
+        </div>
+      </div>
+    </section>

@@ -249,10 +249,19 @@ for name in EXISTING:
  if name in ['index.html','home.html']:
   s=s.replace('<body id="top">','<body id="top" class="apply-page home-page">')
   if 'class="skip-link"' not in s:s=s.replace('<!-- SVG sprite -->','<a class="skip-link" href="#main-content">Skip to content</a>\n<!-- SVG sprite -->',1)
-  s=re.sub(r'<section class="enquiry".*?</section>','<section class="enquiry container" id="register">'+enquiry('home-enquiry')+'</section>',s,flags=re.S)
+  registration=(ROOT/'scripts/templates/register-interest.html').read_text()
+  registration_start=s.find('<section class="enquiry')
+  if registration_start!=-1:
+   registration_start=s.rfind('\n',0,registration_start)+1
+   registration_end=s.index('</main>',registration_start)
+   s=s[:registration_start]+registration+s[registration_end:]
+  if 'assets/css/registration.css' not in s:s=s.replace('</head>','<link rel="stylesheet" href="assets/css/registration.css">\n</head>')
+  s=s.replace('<script src="assets/js/registration.js"></script>','')
+  s=s.replace('</body>','<script src="assets/js/registration.js"></script>\n</body>')
   finder='<section class="study-section container" aria-labelledby="course-search-title"><h2 id="course-search-title">Find your course at UWA India</h2><form class="course-filter" action="study.html#courses" method="get" data-course-finder role="search"><label>Search by course or study area<input class="filter-control" name="q" type="search" placeholder="Business, computing, data…"></label><label>Level of study<select name="level" class="filter-control"><option value="">All levels</option><option>Undergraduate</option><option>Postgraduate</option></select></label><label>Campus<select name="campus" class="filter-control"><option value="">All campuses</option><option>Mumbai</option><option>Chennai</option></select></label><button class="btn btn--primary" type="submit">Find courses</button></form></section>'
   s=re.sub(r'<section class="section course-search".*?</section>',finder,s,flags=re.S)
   s=re.sub(r'\s*<script src="assets/js/form-data.js"></script>','',s)
+  s=s.replace('<script src="assets/js/registration.js"></script>','<script src="assets/js/form-data.js"></script>\n<script src="assets/js/registration.js"></script>')
  if name in ['undergraduate-courses.html','postgraduate-courses.html']:
   level='Undergraduate' if name.startswith('undergraduate') else 'Postgraduate'
   s=re.sub(r'<section class="course-list".*?</section>','<section class="course-list course-list--complete" aria-label="'+level+' courses" data-rendering="CourseListingCards">'+catalogue(level)+'</section>',s,flags=re.S)
