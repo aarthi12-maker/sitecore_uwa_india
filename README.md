@@ -1,6 +1,6 @@
 # UWA India — Course listing screens
 
-Run `npm start` and open http://127.0.0.1:3000. The latest default screen is Postgraduate courses (`index.html`, also `postgraduate-courses.html`). Undergraduate courses is at `undergraduate-courses.html`. Both are linked in every page’s menu. The prior screens remain at `why-uwa-india.html`, `scholarships.html`, `how-to-apply.html`, and `home.html`.
+Run `npm start` and open http://127.0.0.1:3000. The default screen is the home page (`index.html`, also available at `home.html`). Postgraduate courses is at `postgraduate-courses.html`, and undergraduate courses is at `undergraduate-courses.html`. Both are linked in every page’s menu. Other screens are at `why-uwa-india.html`, `scholarships.html`, and `how-to-apply.html`.
 
 The two layouts follow the supplied course-listing screenshots: full-width laboratory images, overlapping Vivid Blue chevron panels, two hero actions, centred course cards and the complete shared footer. Introductory copy is from the supplied content PDF, pages 6–7. Card titles follow the screenshots. The first two undergraduate image cards have no visible titles in the reference; their accessible names describe course exploration without inventing program names.
 
